@@ -1,15 +1,23 @@
 import { Button } from "@/components/ui/button";
+import { createUser } from "@/lib/actions/user.action";
 import { connectToDatabase } from "@/lib/database";
 import Image from "next/image";
 import Link from "next/link";
 
 export default async function Home() {
-  
-  try {
-    await connectToDatabase()
-  } catch (error) {
+  // const user = {
+  //   clerkId: 'string',
+  //   firstName: 'string',
+  //   lastName: 'string',
+  //   username: 'string',
+  //   email: 'string',
+  //   photo: 'string',
+  // }
+  // try {
+  //   await createUser(user)
+  // } catch (error) {
     
-  }
+  // }
 
   return (
     <>
