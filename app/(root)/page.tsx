@@ -1,8 +1,25 @@
 import { Button } from "@/components/ui/button";
+import { createUser } from "@/lib/actions/user.action";
+import { connectToDatabase } from "@/lib/mongodb/database";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Home() {
+export default async function Home() {
+  // const user = {
+  //   clerkId: 'string',
+  //   firstName: 'string',
+  //   lastName: 'string',
+  //   username: 'string',
+  //   email: 'string',
+  //   photo: 'string',
+  // }
+  // try {
+  //   await createUser(user)
+  // } catch (error) {
+  //   console.log(error);
+    
+  // }
+
   return (
     <>
       <section className="bg-primary-50 bg-dotted-pattern bg-contain py-5 md:py-10">
