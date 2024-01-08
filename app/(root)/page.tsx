@@ -5,6 +5,10 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default async function Home() {
+
+  const env = process.env.WEBHOOK_SECRET
+  console.log(env);
+  
   // const user = {
   //   clerkId: 'string',
   //   firstName: 'string',
